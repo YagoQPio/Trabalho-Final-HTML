@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+    <head>
+ 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+        
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        
+        <div class="Cadastro">
+            <h1 id="titulo">Cadastro para novos alunos</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+
+        <form>
+
+            <fieldset class="grupo">
+               
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
+            <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="cidade" name="cidade" id="cidade" required><br><br>
+                <label for="estado"><strong></strong>Estado</strong></label>
+                <input type="text" name="estado" id="estado" required><br><br>
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input type="text" name="endereco" id="endereco" required><br><br>
+ 
+            </div>    
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            
+            <div class="campo">
+                <label><strong>Dessas opções abaixo você mais se identifica?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Web-Disign
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Game-Devoloper
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Softwere Devoloper 
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Machine Learning Developer.
+                </label>
+            </div>
+
+            
+            <div class="campo">
+                <label for="senioridade"><strong>Escolaridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Ensino Fundamental</option>
+                  <option>Ensino Médio</option>
+                  <option>Ensino Superior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+              
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                    <input type="checkbox" id="tecnologia8" name="tecnologia8" value="GoLand">
+                    <label for="tecnologia8"> GoLand</label>
+                </div>
+            </fieldset>
+
+            
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea><br><br>
+            </div>           
+
+        </form>
+    </body>
+    <footer><button class="botao" type="submit" onsubmit="">Concluído</button> </footer>
+</html>
+
+
+
